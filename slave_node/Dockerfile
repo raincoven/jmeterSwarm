@@ -1,4 +1,4 @@
-FROM jmeter/base 
+FROM raincoven/jm_base
 LABEL Description="This image is used to start the Apache JMeter Server Executable"
 
 # Ports required for JMeter Slaves/Server
