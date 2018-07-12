@@ -1,7 +1,7 @@
 version: "3.1"
 services:
   master:
-    image: jmeter/master
+    image: raincoven/jm_master
     tty: true
     ports:
       - "60000"
@@ -17,7 +17,7 @@ services:
       placement:
           constraints: [node.role == manager]
   slave:
-    image: jmeter/slave
+    image: raincoven/jm_slave
     tty: true
     networks:
       - jm-network
